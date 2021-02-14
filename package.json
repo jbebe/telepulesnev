@@ -1,0 +1,24 @@
+{
+  "name": "telepulesek",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "shx rm -rf dist  && webpack --config webpack.config.js && shx cp cover.png dist/",
+    "dev": "nodemon -L --inspect src/index.ts",
+    "serve": "cd dist && http-server -a localhost -p 8000"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "5.1.0",
+    "http-server": "0.12.3",
+    "nodemon": "2.0.7",
+    "shx": "0.3.3",
+    "ts-loader": "8.0.17",
+    "ts-node": "^9.1.1",
+    "typescript": "4.1.5",
+    "webpack": "5.21.2",
+    "webpack-cli": "4.5.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
