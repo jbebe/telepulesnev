@@ -131,6 +131,7 @@
         const currentNode = chain[currentKey]
         result.push(currentKey)
         // get edge with highest probability DESC
+        // TODO: filter so if last key ends with vowel, new one doesn't start with vowel
         let edges = Object.entries(currentNode.edges)
         if (edges.length === 0){
           currentKey = getRandomStart()
